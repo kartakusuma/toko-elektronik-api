@@ -17,7 +17,9 @@ class ProdusenFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nama' => fake()->company(),
+            'kota' => fake()->city(),
+            'negara' => fake()->country()
         ];
     }
 }
